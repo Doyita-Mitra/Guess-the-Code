@@ -11,7 +11,7 @@ void PrintIntro(int Difficulty)
     cout << "You need to enter the correct codes to continue..." << endl;
 }
 
-bool RandCode(int Difficulty) 
+bool GuessCode(int Difficulty) 
 {
     PrintIntro(Difficulty);
 
@@ -58,7 +58,7 @@ int main()
     while (LevelDifficulty <= MaxDifficulty) //loop game until all levels are completed
     {
 
-        bool bLevelComplete = RandCode(LevelDifficulty);
+        bool bLevelComplete = GuessCode(LevelDifficulty);
         cin.clear();   //clear any errors
         cin.ignore();  //discards the buffer
 
